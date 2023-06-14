@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tienda de PC</title>
+</head>
+<body>
+
+    <!-- Cabecera de pagina-->
+
+    <header>
+        <div class="title">
+            <h1>DREAM PC BUILDER</h1>
+        </div>
+        <div class="carritoDiv">
+            <img src="./img/carrito.png" alt="">
+            <p id="carritoPrice">0</p>
+        </div>
+
+    </header>
+
+    <!-- Body de pagina -->
+
+    <main id="main">
+        <asside>
+            <div class="partesPc">
+                <div class="parte" id="procesador">
+                    <img src="./img/proce-default.png" draggable="true" id="procesadorSelected">
+                    <p id="procesadorPrice">0</p>
+                </div>
+                <div class="parte" id="procesador">
+                    <img src="./img/motherboard-default.png" draggable="true" id="motherboardSelected">
+                    <p id="motherboardPrice">0</p>
+                </div>
+                <div class="parte" id="graphicCard">
+                    <img src="./img/graphicCard-default.png" draggable="true" id="graphicCardSelected">
+                    <p id="graphicCardPrice">0</p>
+                </div>
+                <div class="parte" id="ram">
+                    <img src="./img/ram-default.png" draggable="true" id="ramSelected">
+                    <p id="ramPrice">0</p>
+                </div>
+                <div class="parte" id="powerSupply">
+                    <img src="./img/fuente-default.png" draggable="true" id="powerSupplySelected">
+                    <p id="powerSupplyPrice">0</p>
+                </div>
+                <div class="parte" id="storage">
+                    <img src="./img/storage-default.png" draggable="true" id="storageSelected">
+                    <p id="storagePrice">0</p>
+                </div>
+                <div class="parte precio">
+                    <p id="finalPrice">0</p>
+                </div>
+            </div>           
+        </asside>
+        <section id="section">
+            <article class="articleList">
+                <h1>Procesador</h1>
+                <div class="articleList-second">
+                    <div class="articleListOption">
+                        <p>Intel Core I3</p>
+                        <img src="./img/intel-3.png" draggable="true" class="procesadorOption" alt="150">
+                        <p>U$S 150</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Intel Core I5</p>
+                        <img src="./img/intel-5.png" draggable="true" class="procesadorOption" alt="190">
+                        <p>U$S 190</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Intel Core I9</p>
+                        <img src="./img/intel-9.png" draggable="true" class="procesadorOption" alt="330">
+                        <p>U$S 330</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Ryzen 3</p>
+                        <img src="./img/ryzen3.png" draggable="true" class="procesadorOption" alt="140">
+                        <p>U$S 140</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Ryzen 5</p>
+                        <img src="./img/ryzen5.png" draggable="true" class="procesadorOption" alt="180">
+                        <p>U$S 180</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Ryzen 7</p>
+                        <img src="./img/ryzen7.png" draggable="true" class="procesadorOption" alt="290">
+                        <p>U$S 290</p>
+                    </div>
+                </div>
+            </article>
+            <article class="articleList">
+                <h1>Placa Madre</h1>
+                <div class="articleList-second">
+                    <div class="articleListOption">
+                        <p>Asus</p>
+                        <img src="./img/mother-asus.png" draggable="true" class="motherboardOption" alt="150">
+                        <p>U$S 150</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>MSI</p>
+                        <img src="./img/mother-msi.png" draggable="true" class="motherboardOption" alt="210">
+                        <p>U$S 210</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Asus ROG</p>
+                        <img src="./img/mother-rog.png" draggable="true" class="motherboardOption" alt="320">
+                        <p>U$S 320</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>GigaByte</p>
+                        <img src="./img/mother-gigabyte.png" draggable="true" class="motherboardOption" alt="155">
+                        <p>U$S 155</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Aorus</p>
+                        <img src="./img/mother-aorus.png" draggable="true" class="motherboardOption" alt="180">
+                        <p>U$S 180</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Asrock</p>
+                        <img src="./img/mother-asrock.png" draggable="true" class="motherboardOption" alt="90">
+                        <p>U$S 90</p>
+                    </div>
+            </article>
+            <article class="articleList">
+                <h1>Tarjeta Grafica</h1>
+                <div class="articleList-second">
+                    <div class="articleListOption">
+                        <p>1080ti MSI</p>
+                        <img src="./img/1080ti-msi.png" draggable="true" class="graphicCardOption" alt="300">
+                        <p>U$S 300</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>2080ti Founders</p>
+                        <img src="./img/2080ti.png" draggable="true" class="graphicCardOption" alt="400">
+                        <p>U$S 400</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>1050ti Asus</p>
+                        <img src="./img/1050ti.png" draggable="true" class="graphicCardOption" alt="80">
+                        <p>U$S 80</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>3090 Founders</p>
+                        <img src="./img/3090.png" draggable="true" class="graphicCardOption" alt="750">
+                        <p>U$S 750</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>1060ti MSI</p>
+                        <img src="./img/1060ti.png" draggable="true" class="graphicCardOption" alt="190">
+                        <p>U$S 190</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>RX580</p>
+                        <img src="./img/rx580.png" draggable="true" class="graphicCardOption" alt="90">
+                        <p>U$S 90</p>
+                    </div>
+            </article>
+            <article class="articleList">
+                <h1>Memoria Ram</h1>
+                <div class="articleList-second">
+                    <div class="articleListOption">
+                        <p>GsKill</p>
+                        <img src="./img/ram-gskill.png" draggable="true" class="ramOption" alt="190">
+                        <p>U$S 190</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Hyper X</p>
+                        <img src="./img/ram-hyperx.png" draggable="true" class="ramOption" alt="160">
+                        <p>U$S 160</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Radeon R9</p>
+                        <img src="./img/ram-radeon.png" draggable="true" class="ramOption" alt="110">
+                        <p>U$S 110</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Vengeance</p>
+                        <img src="./img/ram-vengeance.png" draggable="true" class="ramOption" alt="250">
+                        <p>U$S 250</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Crucial</p>
+                        <img src="./img/ram-crucial.png" draggable="true" class="ramOption" alt="80">
+                        <p>U$S 80</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>Kingston</p>
+                        <img src="./img/ram-kingston.png" draggable="true" class="ramOption" alt="100">
+                        <p>U$S 100</p>
+                    </div>
+            </article>
+            <article class="articleList">
+                <h1>Fuente de Poder</h1>
+                <div class="articleList-second">
+                    <div class="articleListOption">
+                        <p>Corsair 750W</p>
+                        <img src="./img/fuente-corsair.png" draggable="true" class="powerSupplyOption" alt="245">
+                        <p>U$S 245</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>MetalBlade 750W</p>
+                        <img src="./img/fuente-metalblade.png" draggable="true" class="powerSupplyOption" alt="170">
+                        <p>U$S 170</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>ThermalTake 600W</p>
+                        <img src="./img/fuente-thermaltake.png" draggable="true" class="powerSupplyOption" alt="300">
+                        <p>U$S 300</p>
+                    </div>
+            </article>
+            <article class="articleList">
+                <h1>Almacenamiento</h1>
+                <div class="articleList-second">
+                    <div class="articleListOption">
+                        <p>HDD Western Digital 1 Tb</p>
+                        <img src="./img/hdd-wd.png" draggable="true" class="storageOption" alt="50">
+                        <p>U$S 50</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>HDD SeaGate 1 Tb</p>
+                        <img src="./img/hdd-seagate.png" draggable="true" class="storageOption" alt="45">
+                        <p>U$S 45</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>HDD Western Digital 3 Tb</p>
+                        <img src="./img/hdd-wd3tb.png" draggable="true" class="storageOption" alt="130">
+                        <p>U$S 130</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>SSD Corsair 120 Gb</p>
+                        <img src="./img/ssd-corsair.png" draggable="true" class="storageOption" alt="100">
+                        <p>U$S 100</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>SSD Kingston 400 Gb</p>
+                        <img src="./img/ssd-kingston.png" draggable="true" class="storageOption" alt="210">
+                        <p>U$S 210</p>
+                    </div>
+                    <div class="articleListOption">
+                        <p>M.2 Samsung 960 Gb</p>
+                        <img src="./img/nvme-samsung.png" draggable="true" class="storageOption" alt="450">
+                        <p>U$S 450</p>
+                    </div>
+            </article>
+        </section>
+        <section>
+            <div class="comentario">
+                Buen dia / tarde / noche para cuando sea que vea mi trabajo profesor/a. Cualquier comentario me seria de grandisima ayuda, mas que nada referido a tema backend / JavaScript. Estoy buscando desarrollarme en este ambito para poder tener una salida laboral y cualquier ayuda desde ya es bienvenida. Le dejo mi email: Augusto.2002@hotmail.com o mi instagram @augu.adeff. Si no es de mucha molestia para con usted le agradeceria que me marcara que puedo mejorar. Desde ya muchas gracias. Atte Augusto Adeff
+            </div>
+        </section>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>

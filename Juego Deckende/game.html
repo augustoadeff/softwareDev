@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./css/reset.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="./css/game-style.css">
+            <title>Deckende enter</title>
+        </head>
+        <body>
+            <main>
+                <div id="gameContainer">
+                    <div id="game">
+                        <!--<div class="containerItem"><div class="item"></div></div>-->
+                    </div>
+                    <div id="gameTitle">
+                        <p>DECKENDE</p>
+                    </div>
+                </div>
+                <div id="userContainer">
+                    <form id="form_entrada" action="juego.html">
+                        <div class="itemform">
+                            <img src="./img/avatar1.png" id="avatar" width="26">
+                            <input type="text" id="nick" value="nick" readonly>
+                        </div>
+                        <div class="itemform">
+                            <label for="puntuacion">Puntuacion</label>
+                            <input type="text" id="score" value="0"  class="gameInput" readonly>
+                        </div>
+                        <div class="itemform">
+                            <label for="tmpo">Tiempo restante</label>
+                            <input type="text" id="time" value="30" class="gameInput" readonly>
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <footer>
+                Curso Frontend JS, HTML y CSS
+            </footer>
+            <script src="./js/user-data.js"></script>
+            <script src="./js/game.js" defer></script>
+        </body>
+    </html>

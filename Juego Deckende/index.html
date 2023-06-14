@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Mastermind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+
+    <!-- CABECERA DE PAGINA -->
+
+    <header>
+        <img draggable="true" id="logo" src="./img/logo.jpg" alt="Logo Principal Deckende">
+    </header>
+
+    <!-- CUERPO DE PAGINA -->
+
+    <main>
+      <div>
+        <p id="error"></p>
+      </div>
+        <form action="game.html" id="mainForm">
+          <div class="itemform">
+            <label for="name">Introduce tu Nick *</label>
+            <input type="text" name="nick" id="nicka" value="@" readonly>
+            <input type="text" name="nick" id="nick" required minlength="3">
+          </div>
+          <div class="itemform">
+            <label for="size">Tamaño del juego *</label>
+            <select name="size" id="size">
+              <option value="none">-- Elige un tamaño --</option>
+              <option value="4">4 x 4</option>
+              <option value="5">5 x 5</option>
+              <option value="6">6 x 6</option>
+              <option value="7">7 x 7</option>
+              <option value="8">8 x 8</option>
+            </select>
+          </div>
+          <div class="itemform">
+            <div class="avatarTitle"><p>AVATAR *</p></div>
+            <div class="avatarFlex">
+              <div class="selectedAvatar">
+                <img src="img/avatar1.png" id="avatarSeleccionado">
+              </div>
+
+              <div class="avatarGrid">
+                <div id="avatar" ><img src="img/avatar1.png" draggable="true" class="avatarImg"></div>    
+                <div id="avatar"><img src="img/avatar2.png" draggable="true" class="avatarImg"></div>
+                <div id="avatar"><img src="img/avatar3.png" draggable="true" class="avatarImg"></div>
+                <div id="avatar"><img src="img/avatar4.png" draggable="true" class="avatarImg"></div>
+                <div id="avatar"><img src="img/avatar5.png" draggable="true" class="avatarImg"></div>
+                <div id="avatar"><img src="img/avatar6.png" draggable="true" class="avatarImg"></div>
+              </div>
+             </div> 
+          </div>
+          <div class="itemform">
+            <input type="submit" value="JUGAR" id="playbutton">
+         </div>         
+        </form>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+
+    <footer>
+        <p> Curso MasterMind HTML, CSS y JS </p>
+    </footer>
+
+            <!-- CODIGO DE JS -->
+
+    <script src="./js/app.js" defer></script>
+    <script src="./js/user-data.js"></script>
+</body>
+</html>
